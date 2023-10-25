@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import styles from './UserProfile.module.scss'
 
 import avatarImg from 'assets/img/avatar.png'
-import { ReactComponent as BellIcon } from 'assets/icons/bell.svg'
+// import { ReactComponent as BellIcon } from 'assets/icons/bell.svg'
 import { ReactComponent as ArrowDownIcon } from 'assets/icons/arrow-down.svg'
 import { ReactComponent as LogoutIcon } from 'assets/icons/logout.svg'
 

@@ -2,7 +2,7 @@ import { CompaniesCarousel, Heading } from 'components'
 
 import styles from './Companies.module.scss'
 
-import { ReactComponent as PlusIcon } from 'assets/icons/plus.svg'
+// import { ReactComponent as PlusIcon } from 'assets/icons/plus.svg'
 import { ReactComponent as ArrowDownIcon } from 'assets/icons/arrow-down.svg'
 
 interface CompaniesProps {

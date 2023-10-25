@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 
-import { Logo, ThemeSwitcher, LangSwitcher, UserProfile } from 'components'
+import { Logo, ThemeSwitcher, UserProfile } from 'components'
 
 import { ROUTE_NAMES, RouteNamesValues } from 'core/router'
 
