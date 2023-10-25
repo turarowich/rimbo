@@ -1,0 +1,25 @@
+.heading:is(h1, h2) {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  line-height: 31px;
+}
+
+.heading:is(h2, h3) {
+  color: var(--primary-color);
+}
+
+h1.heading {
+  color: var(--white-color);
+}
+
+h3.heading {
+  font-size: var(--font-size-lg);
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1315px) {
+  .heading:is(h1, h2) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}

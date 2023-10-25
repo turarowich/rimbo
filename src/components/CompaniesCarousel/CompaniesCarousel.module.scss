@@ -1,0 +1,62 @@
+.companies-carousel-container {
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .prev-btn {
+    left: -15px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .next-btn {
+    right: -15px;
+  }
+
+  @media screen and (max-width: 970px) {
+    .prev-btn {
+      left: -12px;
+    }
+
+    .next-btn {
+      right: -12px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .next-btn {
+      right: 4px;
+    }
+  }
+}
+
+.companies-carousel {
+  width: 100%;
+
+  @media screen and (max-width: 970px) {
+    :global {
+      overflow-x: visible;
+
+      .swiper-slide {
+        width: 320px;
+      }
+    }
+  }
+}

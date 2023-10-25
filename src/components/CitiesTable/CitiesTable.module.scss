@@ -1,0 +1,83 @@
+.cities-table {
+  table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+
+    &::before {
+      content: '';
+    }
+
+    thead {
+      border-bottom: 1px solid var(--table-border-color);
+
+      tr {
+        th {
+          padding: 10px 0;
+          color: #abadb8;
+          font-weight: 300;
+          text-align: left;
+
+          span {
+            padding-left: 4px;
+          }
+
+          &:nth-of-type(1),
+          &:nth-of-type(3),
+          &:nth-of-type(4) {
+            min-width: 290px;
+          }
+
+          &:nth-of-type(2) {
+            min-width: 360px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        padding: 16px 0;
+
+        &:nth-child(even) {
+          background: var(--table-row-bg-color);
+        }
+
+        &:first-of-type td {
+          border-top: 16px solid transparent;
+        }
+
+        &:last-of-type td {
+          border-bottom: none;
+          padding-bottom: 7px;
+        }
+
+        td {
+          border-bottom: 16px solid transparent;
+          line-height: 50px;
+
+          &:first-of-type {
+            padding-left: 8px;
+            border-radius: 8px 0 0 8px;
+
+            span {
+              padding-left: 1px;
+            }
+          }
+
+          &:last-of-type {
+            border-radius: 0 8px 8px 0;
+          }
+
+          &:nth-child(3) {
+            span {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

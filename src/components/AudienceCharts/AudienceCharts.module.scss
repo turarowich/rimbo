@@ -1,0 +1,26 @@
+.audience-charts {
+  margin-top: 24px;
+
+  @media screen and (max-width: 1315px) {
+    :global {
+      .wrapper {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+.charts-list {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  margin-top: 16px;
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+
+    & > div {
+      min-width: 340px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+
+  span {
+    margin-left: 16px;
+  }
+}

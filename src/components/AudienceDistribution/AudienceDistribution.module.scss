@@ -1,0 +1,62 @@
+.audience-distribution {
+  flex: 1 1 0;
+
+  :global {
+    .box {
+      padding: 24px;
+    }
+  }
+}
+
+.content {
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+
+  &-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    span {
+      width: 45px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.legend-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:nth-of-type(1) .legend-list-circle {
+      background: linear-gradient(180deg, #58c4f1 0%, #4d83f8 100%);
+    }
+
+    &:nth-of-type(2) .legend-list-circle {
+      background: linear-gradient(180deg, #c058f1 0%, #712893 100%);
+    }
+
+    &:nth-of-type(3) .legend-list-circle {
+      background: var(--audience-unknown-color);
+    }
+  }
+
+  &-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}

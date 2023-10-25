@@ -1,0 +1,30 @@
+.advertisment-type {
+  position: relative;
+
+  :global {
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 20px;
+      background: var(--advertisment-type-bg-color);
+    }
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & > *:last-child {
+    margin-left: auto;
+  }
+
+  &-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--purple-color);
+  }
+}

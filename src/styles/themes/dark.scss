@@ -1,0 +1,71 @@
+body.dark {
+  --primary-color: #e6f3f2;
+
+  --main-bg-color: #141838;
+  --header-bg-color: #141838;
+  --header-nav-item-active-color: #4db4ff;
+
+  --theme-switcher-bg-color: #191e44;
+  --theme-switcher-item-active-bg-color: #4854bf;
+  --theme-switcher-track-box-shadow: none;
+
+  --companies-bg-color: #0a071c;
+  --companies-light-width: 1578px;
+  --companies-light-height: 473px;
+  --companies-light-blur: 110px;
+  --companies-light-opacity: 0.2;
+
+  --hover-bg-color: rgba(255, 255, 255, 0.05);
+  --dropdown-bg-color: #313c82;
+  --dropdown-item-hover-bg-color: rgba(72, 84, 191, 0.25);
+
+  --company-card-bg-color: #191e44;
+  --company-card-border-color: #3c54ba;
+
+  --box-bg-color: #191e44;
+  --box-border-color: #252c65;
+
+  --devices-unknown-color: #5fede7;
+  --legend-text-color: rgba(230, 243, 242, 0.4);
+
+  --progress-bg-color: #34385a;
+
+  --chart-value-color: rgba(255, 255, 255, 0.6);
+
+  --audience-unknown-color: #4854bf;
+
+  --checkbox-bg-color: #242b62;
+  --checkbox-border-color: #354092;
+  --checkbox-checkmark-color: #fff;
+
+  --advertisment-type-bg-color: #1e2451;
+
+  --advertisment-chart-labels-color: rgba(255, 255, 255, 0.6);
+
+  --button-bg-color: #1e2451;
+  --button-border-color: #2c357a;
+  --button-icon-color: #fff;
+
+  --table-row-bg-color: rgba(255, 255, 255, 0.05);
+  --table-border-color: rgba(234, 234, 237, 0.1);
+  --table-overflow-overlay-bg-color: linear-gradient(270deg, #191e44 35.92%, rgba(25, 30, 68, 0) 100%);
+
+  --scrollbar-color: #25294e;
+  --scrollbar-border-color: #191e44;
+
+  --pagination-button-active-bg-color: rgba(255, 255, 255, 0.05);
+  --pagination-arrow-color: #fff;
+
+  --calendar-bg-color: #141838;
+  --calendar-color: rgba(230, 243, 242, 0.5);
+  --calendar-top-line-bg-color: #223066;
+  --calendar-nav-button-url: '../../assets/icons/arrow-down.svg';
+
+  --columns-dropdown-active-bg-color: linear-gradient(0deg, #313c82 0%, #313c82 100%), rgba(255, 255, 255, 0.2);
+  --columns-dropdown-active-border-color: rgba(75, 118, 219, 0.4);
+  --columns-dropdown-drag-bg-color: rgba(255, 255, 255, 0.05);
+  --columns-dropdown-drag-hover-bg-color: rgba(255, 255, 255, 0.05);
+
+  --mobile-menu-border-color: #262d66;
+  --mobile-menu-bg-color: #141838;
+}

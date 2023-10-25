@@ -1,0 +1,53 @@
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+  z-index: 10;
+
+  @media screen and (max-width: 500px) {
+    gap: 0;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+
+  &-active {
+    background: var(--pagination-button-active-bg-color);
+  }
+
+  &-disabled {
+    pointer-events: none;
+    cursor: default;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:first-of-type {
+    svg {
+      transform: rotate(90deg);
+
+      path {
+        stroke: var(--pagination-arrow-color);
+      }
+    }
+  }
+
+  &:last-of-type {
+    svg {
+      transform: rotate(-90deg);
+
+      path {
+        stroke: var(--pagination-arrow-color);
+      }
+    }
+  }
+}

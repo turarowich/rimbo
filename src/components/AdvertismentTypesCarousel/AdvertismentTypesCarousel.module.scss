@@ -1,0 +1,55 @@
+.advertisment-types-carousel {
+  position: relative;
+  padding: 0 24px;
+  margin-top: 30px;
+  overflow: hidden;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+
+    @media screen and (max-width: 1315px) {
+      display: none;
+    }
+  }
+
+  .prev-btn {
+    top: 60%;
+    transform: translateY(-60%);
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .next-btn {
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow-x: visible;
+
+  :global {
+    .swiper-slide {
+      width: 243.2px;
+    }
+  }
+}

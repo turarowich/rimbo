@@ -1,0 +1,116 @@
+.targeting-table {
+  table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+
+    &::before {
+      content: '';
+    }
+
+    thead {
+      border-bottom: 1px solid var(--table-border-color);
+
+      tr {
+        th {
+          padding: 10px 0;
+          color: #abadb8;
+          font-weight: 300;
+          text-align: left;
+
+          span {
+            padding-left: 4px;
+          }
+
+          &:nth-of-type(1) {
+            min-width: 99px;
+          }
+
+          &:nth-of-type(2) {
+            min-width: 102px;
+          }
+
+          &:nth-of-type(3) {
+            min-width: 86px;
+          }
+
+          &:nth-of-type(4) {
+            min-width: 118px;
+          }
+
+          &:nth-of-type(5) {
+            min-width: 88px;
+          }
+
+          &:nth-of-type(6),
+          &:nth-of-type(7),
+          &:nth-of-type(8),
+          &:nth-of-type(9) {
+            min-width: 91px;
+          }
+
+          &:nth-of-type(10),
+          &:nth-of-type(11) {
+            min-width: 94px;
+          }
+
+          &:nth-of-type(12) {
+            min-width: 118px;
+          }
+
+          &:nth-of-type(13) {
+            min-width: 88px;
+          }
+
+          &:nth-of-type(14),
+          &:nth-of-type(15),
+          &:nth-of-type(16),
+          &:nth-of-type(17),
+          &:nth-of-type(18),
+          &:nth-of-type(19) {
+            min-width: 91px;
+          }
+
+          &:nth-of-type(20),
+          &:nth-of-type(21) {
+            min-width: 90px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        padding: 16px 0;
+
+        &:nth-child(even) {
+          background: var(--table-row-bg-color);
+        }
+
+        &:first-of-type td {
+          border-top: 16px solid transparent;
+        }
+
+        &:last-of-type td {
+          border-bottom: none;
+          padding-bottom: 7px;
+        }
+
+        td {
+          border-bottom: 16px solid transparent;
+          line-height: 50px;
+
+          &:first-of-type {
+            padding-left: 8px;
+            border-radius: 8px 0 0 8px;
+          }
+
+          &:last-of-type {
+            border-radius: 0 8px 8px 0;
+          }
+        }
+      }
+    }
+  }
+}

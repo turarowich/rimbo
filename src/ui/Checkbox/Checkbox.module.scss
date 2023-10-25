@@ -1,0 +1,25 @@
+.checkbox-container {
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: var(--checkbox-bg-color);
+    border: 1px solid var(--checkbox-border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+  }
+
+  svg {
+    flex-shrink: 0;
+    fill: var(--checkbox-checkmark-color);
+  }
+}

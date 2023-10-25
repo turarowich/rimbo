@@ -1,0 +1,23 @@
+.placement-table {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 16px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    height: 50px;
+    border-radius: 8px;
+    min-width: 170px;
+    box-sizing: border-box;
+
+    &:nth-child(6n),
+    &:nth-child(6n - 1),
+    &:nth-child(6n - 2) {
+      background: var(--table-row-bg-color);
+    }
+  }
+}

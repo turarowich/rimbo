@@ -1,0 +1,33 @@
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--hover-bg-color);
+  }
+
+  .icon {
+    height: 16px;
+  }
+
+  .lang {
+    text-align: center;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+
+    svg path {
+      stroke: var(--primary-color);
+    }
+  }
+}

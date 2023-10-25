@@ -1,0 +1,69 @@
+.advertisment-chart {
+  position: relative;
+  margin-top: 16px;
+
+  :global {
+    .box {
+      position: relative;
+      padding-bottom: 334px;
+      background-image: url('../../assets/img/dots-line.svg');
+      background-size: 100% 35px;
+      background-repeat: repeat-y;
+      background-position: 0 17px;
+    }
+  }
+
+  @media screen and (max-width: 1315px) {
+    :global {
+      .box {
+        border-radius: 8px 0 0 8px;
+      }
+
+      .wrapper {
+        padding-left: 16px;
+        padding-bottom: 15px;
+        overflow-x: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 50px;
+      height: calc(100% - 16px - 34px);
+      background: var(--table-overflow-overlay-bg-color);
+      z-index: 100;
+    }
+  }
+}
+
+.chart {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1296px;
+  height: 310px;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+
+  li {
+    line-height: 17px;
+    font-weight: 300;
+    color: var(--advertisment-chart-labels-color);
+  }
+}
+
+.scroll-container {
+  position: relative;
+  width: 1296px;
+}

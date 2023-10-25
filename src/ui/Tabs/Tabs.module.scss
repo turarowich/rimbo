@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+
+  &-tab {
+    button {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 12px 8px;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+    }
+
+    &-active {
+      border-bottom: 2px solid #09a2f1;
+    }
+  }
+}

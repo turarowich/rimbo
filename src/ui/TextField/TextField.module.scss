@@ -1,0 +1,30 @@
+.text-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 8px;
+  background: #304293;
+  border: 1px solid #4762c9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+
+  input {
+    width: 100%;
+
+    &::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
